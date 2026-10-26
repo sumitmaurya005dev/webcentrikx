@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">WCX logo, dark circle</title>
+  <desc id="desc">Warm white WC above a lime X on a dark charcoal circle.</desc>
+  <circle cx="256" cy="256" r="256" fill="#161616"/>
+  <g fill="#F5F5F4">
+    <path d="M77 126h35l20 82 26-60h24l26 60 20-82h35l-33 128h-35l-25-59-25 59h-35L77 126Z"/>
+    <path d="m433 139-22 28c-14-11-29-16-47-16-34 0-56 17-56 39s22 39 56 39c18 0 33-5 47-16l22 28c-20 17-42 25-70 25-56 0-92-30-92-76s36-76 92-76c28 0 50 8 70 25Z"/>
+  </g>
+  <path d="M156 291h54l46 47 46-47h54l-70 67 70 67h-54l-46-48-46 48h-54l70-67-70-67Z" fill="#D8F36E"/>
+</svg>
