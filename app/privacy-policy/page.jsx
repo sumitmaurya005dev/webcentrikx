@@ -1,0 +1,19 @@
+import Link from "next/link";
+import LegalPage from "../LegalPage";
+
+export const metadata = {
+  title: "Privacy Policy | Webcentrikx Technologies",
+  description: "How Webcentrikx Technologies handles project enquiries, readiness checklist responses, bookings, and contact details.",
+};
+
+export default function PrivacyPolicyPage() {
+  return <LegalPage eyebrow="YOUR INFORMATION" title="Privacy Policy" introduction="This page explains what information Webcentrikx Technologies receives through this website, why we use it, and how to contact us about it." updated="26 October 2026">
+    <section><h2>Who is responsible?</h2><p>Webcentrikx Technologies operates this website. For privacy questions or requests, email <a href="mailto:hello@webcentrikx.com">hello@webcentrikx.com</a>. We operate from India Standard Time (UTC+05:30).</p></section>
+    <section><h2>Information you choose to send</h2><ul><li><strong>Project enquiry:</strong> your name, email address, phone number and country code, selected service, approximate budget, project details, and any ideas you add.</li><li><strong>Readiness checklist follow-up:</strong> your email address, selected challenges, and the explanation you write. That form asks for your agreement to receive one email about your assessment.</li><li><strong>Direct contact:</strong> any information you send by email, phone, WhatsApp, or through a Calendly booking.</li></ul><p>We also receive basic technical information needed to operate and protect the site, such as request information used for abuse prevention and server logs.</p></section>
+    <section><h2>How we use it</h2><p>We use enquiry details to understand your request, respond, arrange a conversation, prepare a proposal if requested, and keep a record of our correspondence. We use checklist responses to send the single follow-up you request. We use technical information to deliver the site, maintain security, and limit spam. We do not use these forms to add you to a marketing mailing list.</p></section>
+    <section><h2>Services involved</h2><p>Form submissions are sent to our business inbox through Hostinger email. Cloudflare Turnstile helps us verify form submissions. Calendly handles scheduling when you open our booking calendar. If you choose WhatsApp, your chat opens on that service. These providers may process information under their own terms and privacy notices. The pricing currency feature asks an exchange-rate provider for rates from our server; it does not send your form answers to that provider.</p></section>
+    <section><h2>Sharing, storage, and retention</h2><p>We share information with service providers only as needed to operate the website and respond to you, and with others if required by law. We do not sell enquiry details. Enquiry and checklist messages are kept in our business email while they are needed for correspondence, an active project, or applicable recordkeeping obligations, then removed when no longer needed. Provider and hosting records may have separate retention periods. Information may be processed outside your country when these services operate internationally.</p></section>
+    <section><h2>Your choices</h2><p>You can ask us what information we hold about you, request a correction or deletion, or withdraw a request for further contact by emailing <a href="mailto:hello@webcentrikx.com">hello@webcentrikx.com</a>. We will respond to requests in line with applicable law and may need to keep some records where legally required. You can choose not to use the forms and contact us directly instead. Browser controls and provider settings are described in our <Link href="/cookie-policy">Cookie Policy</Link>.</p></section>
+    <section><h2>Changes to this policy</h2><p>We may update this policy when our website or services change. The date above shows the latest version.</p></section>
+  </LegalPage>;
+}

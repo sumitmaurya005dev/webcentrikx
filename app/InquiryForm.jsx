@@ -3,6 +3,7 @@
 import { useCallback, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, ChevronDown, CircleHelp, Globe2, Plus, Workflow } from "lucide-react";
 import TurnstileWidget from "./TurnstileWidget";
+import Link from "next/link";
 
 const initial = { name: "", email: "", countryCode: "+91", phone: "", service: "", budget: "", message: "", ideas: "", website: "" };
 const services = [
@@ -98,6 +99,7 @@ export default function InquiryForm() {
       <div className="form-phone-row"><div className="country-code-field"><label htmlFor="country-code">Country code <span className="form-required" aria-hidden="true">*</span></label><div className="ui-select country-code-select"><select id="country-code" value={customCode ? "other" : values.countryCode} onChange={changeCountryCode} aria-label="Country calling code">{callingCodes.map(([code, label]) => <option value={code} key={code}>{label}</option>)}<option value="other">Other code</option></select><ChevronDown size={16} aria-hidden="true" /></div>{customCode && <input type="tel" name="countryCode" value={values.countryCode} onChange={change} autoComplete="tel-country-code" inputMode="tel" required pattern="\+[1-9][0-9]{0,3}" maxLength={5} placeholder="e.g. +81" aria-label="Other country calling code" />}</div><label><span>Contact number <span className="form-required" aria-hidden="true">*</span></span><input type="tel" name="phone" value={values.phone} onChange={change} autoComplete="tel-national" inputMode="tel" required minLength={6} maxLength={24} placeholder="Your phone number" /></label></div>
       <label><span>Approximate budget <span className="form-required" aria-hidden="true">*</span><span className="form-label-note">Any currency is fine</span></span><input name="budget" value={values.budget} onChange={change} required maxLength={80} placeholder="e.g. INR 50,000 or USD 1,200" /></label>
       <TurnstileWidget onToken={onToken} resetKey={challengeReset} />
+      <p className="form-privacy-note">We use these details to reply about your project. Read our <Link href="/privacy-policy" target="_blank">Privacy Policy</Link>.</p>
     </div>}
     <div className="form-trap" aria-hidden="true"><label>Website<input name="website" tabIndex={-1} autoComplete="off" value={values.website} onChange={change} /></label></div>
     <div className="form-navigation">{step > 0 && <button type="button" className="form-back" onClick={() => setStep(current => current - 1)}><ArrowLeft size={17} aria-hidden="true" />Back</button>}{step < 2 ? <button type="button" className="form-submit" onClick={next}>Continue<ArrowRight size={18} aria-hidden="true" /></button> : <button type="submit" disabled={status === "sending" || !turnstileToken} className="form-submit">{status === "sending" ? "Sending..." : "Send enquiry"}<ArrowUpRight size={18} aria-hidden="true" /></button>}</div>
