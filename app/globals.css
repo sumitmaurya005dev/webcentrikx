@@ -572,3 +572,4 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 @media(max-width:480px){.case-meta{grid-template-columns:1fr}.case-detail-image{height:300px}.case-testimonial p{display:block}.case-testimonial p span{display:block;margin-top:3px}}
 .case-hero .case-container{padding-block:60px 78px}.case-hero h1{max-width:1120px;margin-top:43px;font-size:clamp(50px,7vw,96px)}
 @media(max-width:767px){.case-hero .case-container{padding-block:48px 62px}.case-hero h1{margin-top:38px;font-size:clamp(48px,11vw,78px)}}
+.contact-hours{margin-top:13px;color:#c7d4c5;font-size:13px;line-height:1.5}
