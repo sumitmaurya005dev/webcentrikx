@@ -1,0 +1,32 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft, ArrowUpRight, Quote } from "lucide-react";
+import BookCallButton from "./BookCallButton";
+
+export const metadata = {
+  title: "Earthy East Organics Case Study | Webcentrikx",
+  description: "How Webcentrikx built an online storefront for Earthy East Organics, moving product discovery and orders beyond calls and DMs.",
+};
+
+export default function EarthyEastCaseStudy() {
+  return <main className="case-page">
+    <header className="case-header"><Link href="/" className="resource-brand"><span>W</span>Webcentrikx</Link><Link href="/#results"><ArrowLeft size={16} aria-hidden="true" /> All work</Link></header>
+
+    <section className="case-hero"><div className="case-container"><div className="case-hero-top"><p>CLIENT STORY <span>/</span> E-COMMERCE WEBSITE</p><a href="https://earthyeast.in/" target="_blank" rel="noreferrer">Visit live store <ArrowUpRight size={17} aria-hidden="true" /></a></div><h1>From scattered orders to a store customers can explore.</h1><p className="case-lead">Earthy East Organics needed an online home for its products. We built a storefront that gives shoppers a clear way to browse the range and move towards checkout, without starting every order in a call or DM.</p><div className="case-meta"><div><span>CLIENT</span><strong>Earthy East Organics</strong></div><div><span>FOUNDER</span><strong>Krishika Chaudhary</strong></div><div><span>WORK</span><strong>Store design &amp; development</strong></div></div></div></section>
+
+    <div className="case-visual-band"><div className="case-container"><div className="case-browser"><div className="case-browser-bar"><span className="case-browser-dots" aria-hidden="true"><i /><i /><i /></span><span>earthyeast.in</span><a href="https://earthyeast.in/" target="_blank" rel="noreferrer" aria-label="Open the Earthy East Organics website"><ArrowUpRight size={16} aria-hidden="true" /></a></div><Image src="/assets/work-earthyeast.png" width={1365} height={900} priority sizes="(max-width: 768px) 100vw, 1200px" alt="Earthy East Organics storefront showing the hero and product categories" /></div><p className="case-image-caption">The live Earthy East storefront: a product-first introduction and clear ways to browse.</p></div></div>
+
+    <section className="case-snapshot"><div className="case-container"><p className="case-eyebrow">THE SHIFT</p><div className="case-snapshot-grid"><div><span>BEFORE</span><strong>Orders began in calls and DMs.</strong><p>Every product question needed a manual reply before a customer could decide what to buy.</p></div><div><span>WE BUILT</span><strong>A dedicated online store.</strong><p>One place to discover the range, explore categories, and move from interest to checkout.</p></div><div><span>TODAY</span><strong>About 5–6 orders a day.</strong><p>Approximate current order volume shared by the founder; it is not a measured lift from the website.</p></div></div></div></section>
+
+    <section className="case-story case-container"><div className="case-story-heading"><p className="case-eyebrow">THE CHALLENGE</p><h2>Good products needed a place of their own.</h2></div><div className="case-story-body"><p>Before the website, Earthy East had no central online store. Interested buyers had to ask questions and place orders through calls or direct messages. That made discovery slower for shoppers and created repeat work for a small team.</p><p>The brief was to give the brand a credible place to show its products and make the buying path clear from the first visit.</p></div></section>
+
+    <section className="case-detail"><div className="case-container case-detail-grid"><div className="case-detail-copy"><p className="case-eyebrow">OUR APPROACH</p><h2>Let the products lead the journey.</h2><p>We gave the store a clear starting point, direct navigation, and visible product categories so shoppers can orient themselves quickly. Product imagery and a straightforward route to checkout make the site useful beyond the first impression.</p><ul><li>Branded storefront and responsive browsing experience</li><li>Clear category navigation for the organic range</li><li>Product discovery and an online purchase path</li></ul></div><div className="case-detail-image"><Image src="/assets/work-earthyeast.png" width={1365} height={900} sizes="(max-width: 768px) 100vw, 50vw" alt="Close-up of the Earthy East store's category cards for spices, wellness products, and honey" /></div></div></section>
+
+    <section className="case-outcome case-container"><div><p className="case-eyebrow">THE OUTCOME</p><h2>A brand customers can visit before they message.</h2></div><div><p>The store gives Earthy East a permanent online presence and a clearer way to handle product discovery and orders. Krishika reports spending less time managing orders manually and seeing stronger sales since launch. The approximate current volume is 5–6 orders a day; no before-and-after conversion figure was provided.</p><a href="https://earthyeast.in/" target="_blank" rel="noreferrer">Explore the live website <ArrowUpRight size={17} aria-hidden="true" /></a></div></section>
+
+    <section className="case-testimonial"><div className="case-container"><Quote size={35} aria-hidden="true" /><blockquote>“He took the time to understand my requirements, proactively suggested ideas, and was always willing to go the extra mile, even when it meant additional work for him.”</blockquote><p><strong>Krishika Chaudhary</strong><span>Founder, Earthy East Organics</span></p></div></section>
+
+    <section className="case-next"><div className="case-container"><p className="case-eyebrow">YOUR NEXT PROJECT</p><h2>Ready to give your customers a better way to buy?</h2><p>Tell us what is slowing your business down. We&apos;ll discuss the right website or workflow for the job.</p><div className="case-next-actions"><BookCallButton /><Link href="/#contact-enquiry">Send a project brief <ArrowUpRight size={18} aria-hidden="true" /></Link></div></div></section>
+    <footer className="case-footer"><div className="case-container"><span>© {new Date().getFullYear()} Webcentrikx Technologies</span><nav aria-label="Footer"><Link href="/about">About</Link><Link href="/privacy-policy">Privacy</Link><Link href="/terms-of-service">Terms</Link><Link href="/cookie-policy">Cookies</Link></nav><a href="mailto:hello@webcentrikx.com">hello@webcentrikx.com</a></div></footer>
+  </main>;
+}

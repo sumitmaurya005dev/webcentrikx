@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Check, ChevronDown, Quote } from "lucide-react";
 import SectionCta from "./SectionCta";
 import { BrandIcon } from "./SocialLinks";
@@ -20,7 +21,7 @@ const cases = [
     problem: "Shoppers had no central place to discover the products or buy online, while orders through calls and DMs took the founder's time.",
     built: "A product-led store with clear navigation, imagery, and a straightforward path from discovery to checkout.",
     outcome: "The store gave the brand a credible online home. Krishika reported less manual order handling and stronger sales after launch.",
-    currentOrders: "About 5-6 orders per day",
+    currentOrders: "About 5-6 orders per day", caseStudy: "/work/earthy-east",
   },
 ];
 
@@ -61,7 +62,7 @@ export function ClientProof() {
     <div className="proof-heading"><p className="process-eyebrow">LIVE CLIENT CASE STUDIES</p><h2>Web builds doing real business work.</h2><p>Al Taleb Mobile and Earthy East Organics moved product discovery and purchasing from scattered messages to dedicated online stores.</p></div>
     <div className="proof-grid">{cases.map(item => <article className="proof-item" key={item.title}>
       <a href={item.url} target="_blank" rel="noreferrer" aria-label={`Visit ${item.title}`}><Image src={item.image} alt={`${item.title} website screenshot`} width={1365} height={900} sizes="(max-width: 767px) 100vw, 50vw" /><span className="proof-visit">Visit live website <ArrowUpRight size={17} /></span></a>
-      <div className="proof-copy"><p className="process-eyebrow">{item.category}</p><h3>{item.title}</h3><p className="proof-client">Client: {item.client}</p><dl className="proof-story"><div><dt>The challenge</dt><dd>{item.problem}</dd></div><div><dt>What we built</dt><dd>{item.built}</dd></div><div><dt>Business outcome</dt><dd>{item.outcome}</dd></div><div><dt>Approximate current order volume</dt><dd>{item.currentOrders}</dd></div></dl></div>
+      <div className="proof-copy"><p className="process-eyebrow">{item.category}</p><h3>{item.title}</h3><p className="proof-client">Client: {item.client}</p><dl className="proof-story"><div><dt>The challenge</dt><dd>{item.problem}</dd></div><div><dt>What we built</dt><dd>{item.built}</dd></div><div><dt>Business outcome</dt><dd>{item.outcome}</dd></div><div><dt>Approximate current order volume</dt><dd>{item.currentOrders}</dd></div></dl>{item.caseStudy && <Link className="proof-case-link" href={item.caseStudy}>Read the case study <ArrowUpRight size={17} aria-hidden="true" /></Link>}</div>
     </article>)}</div>
   </div></section>;
 }

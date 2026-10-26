@@ -245,13 +245,13 @@ export default function ClientHome() {
           </nav>
           <div className="header-actions">
             <SocialLinks placement="header" />
-            <button type="button" onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading} className="header-contact hidden min-h-11 items-center justify-center rounded-2xl bg-slate-950 px-5 text-sm font-black text-white shadow-xl shadow-slate-900/15 transition hover:-translate-y-0.5 active:translate-y-0 md:inline-flex">{bookingLoading ? "Opening..." : "Book Your Discovery Call"}</button>
+            <button type="button" onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading} className="header-contact hidden min-h-11 items-center justify-center rounded-2xl bg-slate-950 px-5 text-sm font-black text-white shadow-xl shadow-slate-900/15 transition hover:-translate-y-0.5 active:translate-y-0 md:inline-flex">{bookingLoading ? "Opening..." : "Book a Call"}</button>
             <button type="button" className="mobile-menu-button xl:hidden" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(open => !open)}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button>
           </div>
         </div>
         <nav id="mobile-navigation" className="mobile-nav xl:hidden" hidden={!menuOpen} aria-label="Mobile navigation">
           {navItems.map(([label, href]) => <a key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
-          <button type="button" className="mobile-nav-contact" onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading}>{bookingLoading ? "Opening..." : "Book Your Discovery Call"}</button>
+          <button type="button" className="mobile-nav-contact" onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading}>{bookingLoading ? "Opening..." : "Book a Call"}</button>
           <SocialLinks placement="menu" />
         </nav>
       </motion.header>
@@ -269,7 +269,7 @@ export default function ClientHome() {
             We build fast Next.js websites and modern SaaS interfaces, then connect the lead qualification, follow-up, and operations behind them with custom AI automation.
           </motion.p>
           <motion.div variants={fadeUp} transition={{ duration: 0.65, ease: "easeOut" }} className="mt-8 flex flex-wrap gap-3">
-            <motion.button type="button" whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading} className="hero-call-cta inline-flex min-h-12 items-center gap-2 rounded-2xl border border-slate-300 bg-white px-6 text-sm font-black text-slate-950 shadow-sm transition hover:-translate-y-0.5"><CalendarDays size={17} aria-hidden="true" />{bookingLoading ? "Opening calendar..." : "Book Your Discovery Call"}</motion.button>
+            <motion.button type="button" whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading} className="hero-call-cta inline-flex min-h-12 items-center gap-2 rounded-2xl border border-slate-300 bg-white px-6 text-sm font-black text-slate-950 shadow-sm transition hover:-translate-y-0.5"><CalendarDays size={17} aria-hidden="true" />{bookingLoading ? "Opening calendar..." : "Book a Call"}</motion.button>
           </motion.div>
         </motion.div>
 
@@ -393,7 +393,7 @@ export default function ClientHome() {
           <div className="contact-intro"><p className="mb-4 text-xs font-black uppercase tracking-[0.18em] text-teal-200">YOUR NEXT MOVE</p>
             <AnimatedTitle className="max-w-4xl text-4xl font-black tracking-tight md:text-5xl">Build with clarity from the first call.</AnimatedTitle>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">Book a 30-minute discovery call to discuss your website or automation goals. Prefer writing first? Send a short brief beside it.</p><Link className="contact-audit-link" href="/readiness">Not ready for a call? Try the free readiness checklist <ArrowUpRight size={17} aria-hidden="true" /></Link></div>
-          <div id="book-call" className="contact-option"><div className="contact-option-heading"><span>01 / DISCOVERY CALL</span><h3>Book Your Discovery Call.</h3><p>Choose a time. We will discuss the opportunity, likely scope, and a practical next step.</p></div><CalendlyBooking /></div>
+          <div id="book-call" className="contact-option"><div className="contact-option-heading"><span>01 / DISCOVERY CALL</span><h3>Book a Call.</h3><p>Choose a time. We will discuss the opportunity, likely scope, and a practical next step.</p></div><CalendlyBooking /></div>
           <div id="contact-enquiry" className="contact-option"><div className="contact-option-heading"><span>02 / PROJECT ENQUIRY</span><h3>Send a project brief.</h3><p>Share the essentials and we will reply by email with the next step.</p></div><InquiryForm /><p className="contact-email">Prefer email? <a href="mailto:hello@webcentrikx.com">hello@webcentrikx.com</a></p></div>
         </motion.div>
       </section>

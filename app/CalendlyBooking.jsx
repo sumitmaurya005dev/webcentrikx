@@ -29,7 +29,7 @@ export default function CalendlyBooking() {
       <li><Check size={16} aria-hidden="true" />Timeline and next steps</li>
     </ul>
     <button className="booking-open" type="button" onClick={openCalendar} disabled={status === "loading"} aria-busy={status === "loading"}>
-      {status === "loading" ? "Opening calendar..." : "Book Your Discovery Call"}<ArrowUpRight size={18} aria-hidden="true" />
+      {status === "loading" ? "Opening calendar..." : "Book a Call"}<ArrowUpRight size={18} aria-hidden="true" />
     </button>
     {status === "error" && <p className="booking-error" role="status">The popup could not load. Please use the direct link below.</p>}
     <a className="booking-direct" href={bookingUrl} target="_blank" rel="noreferrer">Open Calendly in a new tab <ArrowUpRight size={15} aria-hidden="true" /></a>
