@@ -1,0 +1,167 @@
+/* Remove this import from layout.jsx to restore the original green palette. */
+:root { --background: #f5f5f4; --foreground: #161616; --accent-lime: #d8f36e; --accent-coral: #f28568; }
+body { background: #f5f5f4; color: #161616; }
+::selection { background: #232323; color: #fff; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline-color: #333; }
+
+header.sticky { background: #f7f7f6e8 !important; border-color: #ddd !important; }
+header.sticky a[aria-label="Webcentrikx home"] > div,
+header.sticky .header-contact { background: #181818 !important; color: #fff !important; box-shadow: none !important; border-radius: 6px; }
+header.sticky nav a { color: #555 !important; }
+header.sticky nav a:hover { color: #111 !important; }
+header.sticky .header-contact:hover { background: var(--accent-lime) !important; color: #181818 !important; }
+.mobile-menu-button { border-color: #d5d5d5; background: #fff; color: #222; }
+.mobile-nav { border-color: #d5d5d5; background: #f7f7f6; }
+.mobile-nav a { border-color: #e1e1e1; color: #333 !important; }
+.mobile-nav .mobile-nav-contact { background: #1c1c1c; color: #fff !important; }
+
+#top { background: #f5f5f4; }
+#top h1, #services h2, #stack h2, #automation h2 { color: #181818 !important; line-height: 1.11; }
+#top p:not(.text-xs), #services p:not(.text-xs), #stack p:not(.text-xs), #automation p:not(.text-xs) { color: #5d5d5d; }
+#top .text-teal-700, #services .text-teal-700, #stack .text-teal-700, #automation .text-teal-700 { color: #414141 !important; }
+#top .accent-word { box-shadow: inset 0 -.22em 0 var(--accent-lime); }
+#top a.bg-teal-700 { background: var(--accent-lime) !important; color: #171717 !important; box-shadow: none !important; }
+#top a.bg-teal-700:hover { background: #cae75b !important; }
+#top a.border-slate-200 { border-color: #cfcfcf !important; box-shadow: none !important; }
+.ambient-wash { background: linear-gradient(120deg, transparent 25%, #e3e3e355 46%, #d2d2d255 57%, transparent 74%); }
+.ambient-flow > svg { stroke: #77777726; }
+.hero-system { border-color: #dedede; box-shadow: 0 18px 52px #0000000a; }
+.mini-site { background: #e9ecdf; }
+.mini-site small { color: #474747; }
+.mini-cta { background: #242424; }
+.site-graphic div { background: #9a9a9a; }
+.site-graphic div:nth-child(2) { background: var(--accent-lime); }
+.site-graphic div:nth-child(3) { background: #343434; }
+.status-dot { background: var(--accent-coral); }
+.speed-track span, .activity-bars i { background: #343434; }
+.activity-bars i:nth-child(2n) { background: #a2be4b; }
+.workflow-node.is-active > span { background: #282828; border-color: #282828; }
+.workflow-node.is-active i { background: #969696; }
+.agency-cursor > span { border-color: #555; }
+.cursor-link > span { background: #55555518; }
+.cursor-soft > span { background: #d8f36e66; }
+.cursor-orbit svg { fill: #333; }
+
+.process-eyebrow { color: #555; }
+.proof-heading h2, .founder-inner h2, .scope-inner h2, .faq-inner h2, .simple-process h2, .work-concepts h2 { color: #1b1b1b; line-height: 1.16; }
+.proof-heading > p:last-child, .pricing-heading > p:last-child, .simple-process > div:first-child > p:last-child, .work-concepts > p:not(.process-eyebrow) { color: #5d5d5d; }
+.client-proof, #services, #automation, .faq-section { background: #fff !important; }
+.proof-item { background: #f7f7f7; border-color: #ddd; }
+.proof-item > a { background: #e9e9e9; }
+.proof-visit { color: #242424; }
+.proof-copy h3, .proof-story dt, .proof-focus, .proof-note { color: #353535; }
+.proof-story > div, .proof-focus { border-color: #ddd; }
+.proof-story dd { color: #606060; }
+.proof-client { color: #666; }
+.proof-story dt { color: #242424; }
+.proof-story dt::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 7px; vertical-align: 1px; background: var(--accent-coral); border-radius: 50%; }
+.founder-voices { background: #e6f4af; color: #181818; }
+.founder-voices .process-eyebrow { color: #303b15; }
+.voice-intro h2 { color: #181818; }
+.voice-intro > p:last-child { color: #4d563a; }
+.voice-quote > svg { color: #282f15; }
+.voice-quote figcaption { border-color: #b4c98a; }
+.voice-monogram { background: #1b1b1b; }
+
+.fill-card { border-color: #dedede !important; box-shadow: none !important; }
+.fill-card::before { background: #edf6d1; }
+.fill-card > div:first-child { background: var(--accent-lime) !important; }
+.fill-card h3 { color: #1b1b1b !important; }
+.fill-card p { color: #626262 !important; }
+.section-cta { background: #1d1d1d; border-color: #1d1d1d; color: #fff; }
+.section-cta:hover { background: #383838; }
+.section-cta-secondary { background: transparent; color: #222; }
+.section-cta-secondary:hover { background: #e7e7e7; }
+
+.scope-guide { background: #efefee; }
+.pricing-heading h2 { color: #191919; }
+.pricing-package { border-color: #d5d5d5; background: #fff; }
+.pricing-package-top { color: #363636; }
+.pricing-package-top span { color: #777; }
+.pricing-price { color: #171717; }
+.pricing-price span, .pricing-summary, .pricing-terms { color: #626262; }
+.pricing-package ul { border-color: #e0e0e0; }
+.pricing-package li { color: #333; }
+.pricing-package li svg { color: #555; }
+.pricing-package.is-active { border-color: #222; color: #fff; }
+.pricing-package.is-active .pricing-package-top,
+.pricing-package.is-active .pricing-price,
+.pricing-package.is-active li { color: #fff; }
+.pricing-package.is-active .pricing-package-top span,
+.pricing-package.is-active .pricing-price span,
+.pricing-package.is-active .pricing-summary { color: #c8c8c8; }
+.pricing-package.is-active .pricing-package-top span { color: var(--accent-lime); }
+.pricing-package.is-active ul { border-color: #4b4b4b; }
+.pricing-package.is-active li svg { color: #e0e0e0; }
+
+.founder-authority { background: #e9e9e8; }
+.founder-inner > div:last-child, .founder-role { color: #4c4c4c; }
+.founder-links { gap: 8px; }
+.founder-links a { display: grid; place-items: center; width: 42px; height: 42px; min-height: 42px; padding: 0; border: 1px solid #b9b9b9; border-radius: 50%; background: transparent; color: #222; }
+.founder-links a:hover, .founder-links a:focus-visible { background: var(--accent-lime); border-color: #8aa83d; }
+.founder-links a .brand-icon { width: 19px; height: 19px; }
+.founder-story { background: linear-gradient(125deg, #e8efdb 0%, #f6f7ef 55%, #e9ebdf 100%); border-color: #d9dfcd; }
+.story-heading .process-eyebrow { color: #4a5940; }
+.story-heading h2 span { box-shadow: inset 0 -.22em 0 var(--accent-lime); }
+.story-stage { background: #f9faf5; border: 1px solid #d7dfca; border-radius: 8px; }
+.story-number { display: inline-block; padding: 7px 10px; background: var(--accent-lime); color: #252525; border-radius: 4px; font-weight: 800; }
+.story-chapters button[aria-pressed="true"] span { background: #85a833; }
+.story-cta { border-color: #667a4b; font-weight: 750; }
+.story-heading h2, .story-copy h3 { color: #222; }
+.story-copy p { color: #51594c; }
+.story-cta { color: #262626; border-color: #999; }
+.story-chapters button span { background: #b5b5b5; }
+.story-play { border-color: #bbb; color: #333; }
+.story-play:hover { background: #ddd; }
+
+.work-experience, .process-experience { background: #f3f3f2; border-color: #dedede; }
+.simple-process li { border-color: #d5d5d5; }
+.sample-category, .sample-caption > p { color: #656565; }
+.sample-browser { filter: grayscale(1); }
+.process-sample { border-color: #d1d1d1; box-shadow: 0 15px 35px #00000010; }
+.sample-open { border-color: #c9c9c9; }
+.simple-process li > span { color: #a54833; }
+.simple-process li p { color: #656565; }
+.automation-detail { border-color: #d6d6d6; }
+.automation-benefit { border-color: #e0e0e0; }
+
+.faq-list, .faq-list details { border-color: #d8d8d8; }
+.faq-list summary { color: #272727; }
+.faq-list details p { color: #666; }
+.contact-section { background: #191919; }
+.contact-section .section-cta { background: var(--accent-lime); border-color: var(--accent-lime); color: #191919; }
+.contact-section .section-cta:hover { background: #c9e75c; }
+.contact-email { color: #d1d1d1; }
+.hero-call-cta { border-color: var(--accent-lime); background: var(--accent-lime); color: #1c1c1c; }
+.hero-call-cta:hover { background: #c9e75c; }
+.inquiry-form { color: #252525; }
+.inquiry-form input, .inquiry-form select, .inquiry-form textarea { background: #f6f6f6; border-color: #d3d3d3; color: #202020; }
+.inquiry-form :is(input,select,textarea):focus { border-color: #3a3a3a; box-shadow: 0 0 0 3px #33333320; }
+.form-submit { background: #252525; }
+.form-submit:hover { background: #444; }
+.form-feedback.success { color: #333; }
+.brand-footer { background: #111; }
+.footer-bottom { border-color: #3d3d3d; }
+
+.form-label-note { margin-left: 6px; color: #6c6c6c; font-size: 12px; font-weight: 400; }
+.form-required { color: #9f4e35; font-weight: 800; }
+.whatsapp-widget { position: fixed; z-index: 60; right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); display: grid; justify-items: end; gap: 10px; max-width: calc(100vw - 32px); animation: whatsapp-enter .38s cubic-bezier(.22,1,.36,1) both; }
+.whatsapp-panel { width: min(310px, calc(100vw - 32px)); padding: 18px; border: 1px solid #d7d7d7; border-radius: 8px; background: #fbfbfa; color: #1f1f1f; box-shadow: 0 18px 50px #0003; }
+.whatsapp-panel-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #636363; font-size: 10px; font-weight: 800; }
+.whatsapp-panel-top button { display: grid; place-items: center; width: 30px; height: 30px; margin: -7px -7px -7px 0; border: 0; border-radius: 4px; background: transparent; color: #343434; cursor: pointer; }
+.whatsapp-panel-top button:hover { background: #eaeaea; }
+.whatsapp-panel > p { margin: 22px 0 7px; font-size: 20px; font-weight: 750; line-height: 1.2; }
+.whatsapp-panel-copy { display: block; color: #5a5a5a; font-size: 13px; line-height: 1.5; }
+.whatsapp-panel > a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; margin-top: 20px; padding: 10px 13px; border-radius: 5px; background: #d8f36e; color: #1b1b1b; font-size: 13px; font-weight: 750; transition: background .2s, transform .2s; }
+.whatsapp-panel > a:hover { background: #c9e75c; transform: translateY(-2px); }
+.whatsapp-trigger { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 17px; border: 1px solid #303030; border-radius: 25px; background: #1c1c1c; color: #d8f36e; box-shadow: 0 9px 25px #0003; font-size: 13px; font-weight: 750; cursor: pointer; transition: transform .2s, background .2s; }
+.whatsapp-trigger:hover { transform: translateY(-3px); background: #303030; }
+.whatsapp-trigger .brand-icon { flex: 0 0 auto; }
+@keyframes whatsapp-enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 767px) { .whatsapp-widget { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); } .whatsapp-trigger { width: 50px; padding: 0; } .whatsapp-trigger span { display: none; } }
+@media (prefers-reduced-motion: reduce) { .whatsapp-widget { animation: none; } .whatsapp-panel > a, .whatsapp-trigger { transition: none; } }
+
+@media (max-width: 767px) {
+  #top h1 { line-height: 1.13; }
+  .pricing-price { font-size: 42px; }
+}
