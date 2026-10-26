@@ -1,10 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-labelledby="title desc">
-  <title id="title">WCX logo, dark rectangle</title>
-  <desc id="desc">Warm white WC and lime X on a dark charcoal rectangle.</desc>
-  <rect width="900" height="320" rx="36" fill="#161616"/>
-  <g fill="#F5F5F4">
-    <path d="M72 84h43l26 101 34-74h29l34 74 26-101h43l-41 153h-43l-33-73-33 73h-43L72 84Z"/>
-    <path d="M553 99 527 132c-18-15-37-22-60-22-43 0-72 22-72 50s29 50 72 50c23 0 42-7 60-22l26 33c-24 20-52 30-88 30-71 0-117-36-117-91s46-91 117-91c36 0 64 10 88 30Z"/>
-  </g>
-  <path d="M594 84h56l58 57 58-57h56l-80 76 80 77h-56l-58-58-58 58h-56l80-77-80-76Z" fill="#D8F36E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">WCX dark interlock wordmark</title>
+  <desc id="desc">Custom WCX lettering with a white C opening into a lime X.</desc>
+  <rect width="900" height="300" rx="16" fill="#161616"/>
+  <path d="m88 77 39 142q4 14 16 14t18-14l34-86 34 86q6 14 18 14t16-14l39-142" fill="none" stroke="#F5F5F4" stroke-width="28" stroke-linecap="square" stroke-linejoin="round"/>
+  <path d="M638 96c-32-26-65-39-109-39-100 0-161 44-161 93s61 93 161 93c44 0 77-13 109-39" fill="none" stroke="#F5F5F4" stroke-width="30" stroke-linecap="square"/>
+  <path d="M552 80h47l88 78 88-78h47l-111 102 111 102h-47l-88-80-88 80h-47l111-102L552 80Z" fill="#D8F36E" stroke="#161616" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
 </svg>
