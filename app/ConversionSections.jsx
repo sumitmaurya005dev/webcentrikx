@@ -91,6 +91,7 @@ export function FounderAuthority() {
     <p>I start with the journey behind the screen: where an enquiry lands, what your team needs to know, and which handoffs keep slowing things down. Then I shape the interface and the workflow together, so the result works for your customers and the people serving them.</p>
     <div className="founder-links" aria-label="Sumit's social profiles">
       <a href="https://www.linkedin.com/in/sumitkumarmaurya/" target="_blank" rel="noreferrer" aria-label="Sumit on LinkedIn" title="LinkedIn"><BrandIcon brand="linkedin" size={19} /></a>
+      <a href="https://github.com/sumitmaurya005dev" target="_blank" rel="noreferrer" aria-label="Sumit on GitHub" title="GitHub"><BrandIcon brand="github" size={19} /></a>
       <a href="https://x.com/iamsumitkmaurya" target="_blank" rel="noreferrer" aria-label="Sumit on X" title="X"><BrandIcon brand="x" size={19} /></a>
       <a href="https://www.instagram.com/sumit.docs/" target="_blank" rel="noreferrer" aria-label="Sumit on Instagram" title="Instagram"><BrandIcon brand="instagram" size={19} /></a>
     </div>

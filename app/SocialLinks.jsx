@@ -1,12 +1,13 @@
 "use client";
 
-import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faGithub, faInstagram, faLinkedinIn, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const icons = {
   instagram: faInstagram,
   x: faXTwitter,
   youtube: faYoutube,
   facebook: faFacebookF,
+  github: faGithub,
   linkedin: faLinkedinIn,
   whatsapp: faWhatsapp,
 };
