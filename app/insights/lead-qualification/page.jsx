@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { pageMetadata } from "../../seo";
 
-export const metadata = {
-  title: "n8n Lead Qualification Workflow Guide | Webcentrikx",
-  description: "How to move an incoming lead through validation, qualification, CRM routing, and a clear human handoff using n8n and AI only where useful.",
-};
+export const metadata = pageMetadata("/insights/lead-qualification", "n8n Lead Qualification Workflow Guide | Webcentrikx", "How to move an incoming lead through validation, qualification, CRM routing, and a clear human handoff using n8n and AI only where useful.");
 
 export default function LeadQualificationArticle() {
   return <main className="resource-page"><header className="resource-header"><Link href="/" className="resource-brand"><span>W</span>Webcentrikx</Link><Link href="/insights">All insights</Link></header><article className="resource-inner insight-article"><Link href="/insights" className="article-back"><ArrowLeft size={16} aria-hidden="true" />Insights</Link><p className="process-eyebrow">LEAD OPERATIONS</p><h1>An n8n lead-qualification workflow that hands over useful context.</h1><p className="article-lead">A fast reply is useful, but it is not the whole job. The workflow should gather what a salesperson needs, record where the lead came from, and make the next owner unmistakable.</p>

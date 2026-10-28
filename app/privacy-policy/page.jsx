@@ -1,10 +1,8 @@
 import Link from "next/link";
 import LegalPage from "../LegalPage";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "Privacy Policy | Webcentrikx Technologies",
-  description: "How Webcentrikx Technologies handles project enquiries, readiness checklist responses, bookings, and contact details.",
-};
+export const metadata = pageMetadata("/privacy-policy", "Privacy Policy | Webcentrikx Technologies", "How Webcentrikx Technologies handles project enquiries, readiness checklist responses, bookings, and contact details.");
 
 export default function PrivacyPolicyPage() {
   return <LegalPage eyebrow="YOUR INFORMATION" title="Privacy Policy" introduction="This page explains what information Webcentrikx Technologies receives through this website, why we use it, and how to contact us about it." updated="26 October 2026">

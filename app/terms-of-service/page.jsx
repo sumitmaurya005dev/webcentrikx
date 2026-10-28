@@ -1,9 +1,7 @@
 import LegalPage from "../LegalPage";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "Terms of Service | Webcentrikx Technologies",
-  description: "Terms for using the Webcentrikx Technologies website and requesting website or AI automation services.",
-};
+export const metadata = pageMetadata("/terms-of-service", "Terms of Service | Webcentrikx Technologies", "Terms for using the Webcentrikx Technologies website and requesting website or AI automation services.");
 
 export default function TermsPage() {
   return <LegalPage eyebrow="WEBSITE TERMS" title="Terms of Service" introduction="These terms cover use of this website and enquiries sent through it. A separate written proposal or agreement sets the terms of any client project." updated="26 October 2026">

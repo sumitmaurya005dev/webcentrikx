@@ -1,9 +1,7 @@
 import LegalPage from "../LegalPage";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "Cookie Policy | Webcentrikx Technologies",
-  description: "How cookies and similar browser technologies may be used on the Webcentrikx Technologies website.",
-};
+export const metadata = pageMetadata("/cookie-policy", "Cookie Policy | Webcentrikx Technologies", "How cookies and similar browser technologies may be used on the Webcentrikx Technologies website.");
 
 export default function CookiePolicyPage() {
   return <LegalPage eyebrow="BROWSER TECHNOLOGIES" title="Cookie Policy" introduction="Here is what may be stored or read in your browser when you use this website and its third-party features." updated="26 October 2026">

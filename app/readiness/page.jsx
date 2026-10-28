@@ -1,10 +1,8 @@
 import Link from "next/link";
 import ReadinessCheck from "./ReadinessCheck";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "Website & AI Readiness Checklist | Webcentrikx",
-  description: "A practical self-check for website enquiries, lead handoffs, and business automation. Get a clear next step without booking a call.",
-};
+export const metadata = pageMetadata("/readiness", "Website & AI Readiness Checklist | Webcentrikx", "A practical self-check for website enquiries, lead handoffs, and business automation. Get a clear next step without booking a call.");
 
 export default function ReadinessPage() {
   return <main className="resource-page">

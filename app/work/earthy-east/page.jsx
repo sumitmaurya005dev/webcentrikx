@@ -2,11 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Quote } from "lucide-react";
 import BookCallButton from "./BookCallButton";
+import { pageMetadata } from "../../seo";
 
-export const metadata = {
-  title: "Earthy East Organics Case Study | Webcentrikx",
-  description: "How Webcentrikx built an online storefront for Earthy East Organics, moving product discovery and orders beyond calls and DMs.",
-};
+export const metadata = pageMetadata("/work/earthy-east", "Earthy East Organics Case Study | Webcentrikx", "How Webcentrikx built an online storefront for Earthy East Organics, moving product discovery and orders beyond calls and DMs.");
 
 export default function EarthyEastCaseStudy() {
   return <main className="case-page">

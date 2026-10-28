@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import LegalPage from "../LegalPage";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "About Webcentrikx Technologies",
-  description: "Meet Webcentrikx Technologies and founder Sumit Kumar Maurya. Custom websites and business-tailored AI workflows built with clear ownership.",
-};
+export const metadata = pageMetadata("/about", "About Webcentrikx Technologies", "Meet Webcentrikx Technologies and founder Sumit Kumar Maurya. Custom websites and business-tailored AI workflows built with clear ownership.");
 
 export default function AboutPage() {
   return <LegalPage eyebrow="ABOUT THE AGENCY" title="About" introduction="Webcentrikx Technologies builds custom websites and business-tailored AI workflows that help teams move from enquiry to action.">

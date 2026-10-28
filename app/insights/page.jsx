@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "Website & AI Workflow Insights | Webcentrikx",
-  description: "Practical guides on qualifying leads with n8n and designing reliable AI-assisted business workflows.",
-};
+export const metadata = pageMetadata("/insights", "Website & AI Workflow Insights | Webcentrikx", "Practical guides on qualifying leads with n8n and designing reliable AI-assisted business workflows.");
 
 const articles = [
   { title: "An n8n lead-qualification workflow that hands over useful context", description: "A practical path from incoming enquiry to a clear CRM record and a human-owned next step.", href: "/insights/lead-qualification", topic: "LEAD OPERATIONS" },
