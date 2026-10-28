@@ -27,8 +27,8 @@ const cases = [
 
 const packages = [
   {
-    name: "Next.js Launch", priceUsd: 500, summary: "A fast, focused web presence built to make the next action obvious.",
-    includes: ["Up to 5 custom-designed pages", "Responsive Next.js build", "Clear page journey and lead capture", "Core SEO and performance checks"],
+    name: "Landing Page Sprint", priceUsd: 500, summary: "One focused page for one offer and a clear next step.",
+    includes: ["One custom-designed landing page", "Responsive Next.js build", "Focused copy and lead capture journey", "Core SEO and performance checks"],
   },
   {
     name: "Commerce Architecture", priceUsd: 1200, summary: "A considered storefront that makes browsing and buying easier.", featured: true,
@@ -46,7 +46,7 @@ const packages = [
 const featuredIndex = packages.findIndex(item => item.featured);
 
 const questions = [
-  ["How much does a project cost?", "The three defined web-build packages start at USD 500, 1,200 and 2,000. AI workflow audits and automation builds are quoted against your systems and scope. Any additions are priced before work begins."],
+  ["How much does a project cost?", "A focused landing page starts at USD 500. Commerce and SaaS UI builds start at USD 1,200 and 2,000. Multi-page websites and AI workflow projects are scoped against your requirements. Any additions are priced before work begins."],
   ["How do payments work?", "A 50% upfront deposit secures the project. The remaining payment schedule and deliverables are stated in your proposal before work begins."],
   ["How long will it take?", "A focused website and a connected multi-system workflow have different schedules. We agree the timeline, milestones, and dependencies in writing before starting."],
   ["Who supplies the copy and images?", "Tell us what you already have. The proposal states what copywriting, image sourcing or content support is included and what your team needs to provide."],

@@ -266,11 +266,12 @@ export default function ClientHome() {
             Web experiences that convert. AI workflows that keep up.
           </AnimatedTitle>
           <motion.p variants={fadeUp} transition={{ duration: 0.65, ease: "easeOut" }} className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-            We build fast Next.js websites and modern SaaS interfaces, then connect the lead qualification, follow-up, and operations behind them with custom AI automation.
+            We build fast Next.js websites that help turn interest into enquiries, and custom AI workflows that qualify, route, and follow up with leads while your team stays in control.
           </motion.p>
           <motion.div variants={fadeUp} transition={{ duration: 0.65, ease: "easeOut" }} className="mt-8 flex flex-wrap gap-3">
             <motion.button type="button" whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }} onClick={openBooking} disabled={bookingLoading} aria-busy={bookingLoading} className="hero-call-cta inline-flex min-h-12 items-center gap-2 rounded-2xl border border-slate-300 bg-white px-6 text-sm font-black text-slate-950 shadow-sm transition hover:-translate-y-0.5"><CalendarDays size={17} aria-hidden="true" />{bookingLoading ? "Opening calendar..." : "Book a Call"}</motion.button>
           </motion.div>
+          <motion.p variants={fadeUp} transition={{ duration: 0.65, ease: "easeOut" }} className="hero-call-note">30 minutes with Sumit, the founder · Discuss your project and next steps</motion.p>
         </motion.div>
 
         <HeroSystem />

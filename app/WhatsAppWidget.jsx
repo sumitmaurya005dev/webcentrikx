@@ -14,7 +14,6 @@ export default function WhatsAppWidget() {
     function reveal() {
       if (window.scrollY < 450) return;
       setVisible(true);
-      setOpen(window.matchMedia("(min-width: 768px)").matches);
       window.removeEventListener("scroll", reveal);
     }
     window.addEventListener("scroll", reveal, { passive: true });

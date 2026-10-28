@@ -8,6 +8,7 @@ const examples = [
   {
     title: "WhatsApp lead follow-up",
     type: "WhatsApp + lead capture",
+    route: "WhatsApp → n8n → CRM",
     icon: MessageCircle,
     steps: ["A customer starts a WhatsApp chat", "Approved questions capture what they need", "The lead is logged and your team is alerted"],
     handoff: "A person takes over for pricing and detailed conversations.",
@@ -15,6 +16,7 @@ const examples = [
   {
     title: "CRM pipeline dashboard",
     type: "Leads + sales visibility",
+    route: "Form → n8n → CRM",
     icon: LayoutDashboard,
     steps: ["A new lead arrives from a connected channel", "Its stage, owner and next task are updated", "The dashboard shows what needs attention"],
     handoff: "Your team decides priorities and moves deals forward.",
@@ -22,6 +24,7 @@ const examples = [
   {
     title: "Social content autopilot",
     type: "AI drafts + scheduling",
+    route: "Content queue → Claude → Approval",
     icon: CalendarDays,
     steps: ["A topic enters your content queue", "AI drafts a post from your brand guidance", "A person approves it before scheduling"],
     handoff: "Your team reviews claims, tone and visuals before anything goes live.",
@@ -29,6 +32,7 @@ const examples = [
   {
     title: "Email follow-up",
     type: "Opt-in email + CRM",
+    route: "Form → n8n → Email",
     icon: Mail,
     steps: ["A visitor opts in through a form", "A relevant email sequence is triggered", "Replies and opt-outs are routed correctly"],
     handoff: "Your team handles replies and approves campaign content.",
@@ -36,6 +40,7 @@ const examples = [
   {
     title: "Store order updates",
     type: "E-commerce + operations",
+    route: "Checkout → n8n → Team",
     icon: ShoppingBag,
     steps: ["A customer completes checkout", "The order reaches your tracking system", "Your team and customer get the right updates"],
     handoff: "Your team handles exceptions, fulfilment and customer requests.",
@@ -43,6 +48,7 @@ const examples = [
   {
     title: "AI enquiry assistant",
     type: "AI + human handoff",
+    route: "Chat → Claude → Team",
     icon: Bot,
     steps: ["A visitor asks a common question", "AI answers from approved business information", "Complex requests are sent to your team"],
     handoff: "Uncertain answers and sensitive decisions stay with a human.",
@@ -73,6 +79,7 @@ function WorkflowDemo({ example, index }) {
   return <article className="automation-example">
     <div className="automation-example-top"><span>DEMO 0{index + 1}</span><Icon size={22} aria-hidden="true" /></div>
     <p className="automation-example-type">{example.type}</p>
+    <p className="automation-route">{example.route}</p>
     <h3>{example.title}</h3>
     <ol>{example.steps.map((step, stepIndex) => <li className={active >= stepIndex ? "is-active" : ""} key={step}>
       <span className="automation-step-number">0{stepIndex + 1}</span><span>{step}</span>{stepIndex < example.steps.length - 1 && <ArrowRight size={15} aria-hidden="true" />}
